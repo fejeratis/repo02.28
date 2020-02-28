@@ -97,3 +97,15 @@ const numberOfFibonacci = (a) => {
 // const fibArray = [1, 1, 2, 3, 5, 9, 14, 23];
 
 // console.log(numberOfFibonacci(fibArray));
+
+
+const indexOfOdd2 = (a) => {
+  const index = [];
+  for (let i = 0; i < a.length; i++) {
+    if (i % 2 == 0) {
+      index.push(i)
+    }
+  }
+  return index;
+}
+// console.log(indexOfOdd2(arr));
