@@ -109,3 +109,13 @@ const indexOfOdd2 = (a) => {
   return index;
 }
 // console.log(indexOfOdd2(arr));
+
+
+const average = (a) => {
+  let avg = 0;
+  for (let i = 0; i < a.length - 1; i++) {
+    avg = a[i] + a[i + 1] / 2;
+  }
+  return avg;
+}
+console.log(average(arr));
