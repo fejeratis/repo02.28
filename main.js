@@ -1,27 +1,25 @@
 const arr = (n) => {
- let n = Math.floor(Math.random() * 10 + 1);
+ // let n = Math.floor(Math.random() * 10 + 1);
  let array = Array(n).fill(0);
- return Array;
+ return array;
 }
 
-
-
+// console.log(arr(3));
 
 const fgv = (arr) => {
+  let numb = 0;
   for (let i = 0; i < arr.length; i++) {
     if (arr[i] % 2 === 0) {
-      
+      numb += 1;
     }
-    console.log(arr[i]);
   }
-
+  return numb;
 }
 
-const srt =(arr) => {
+const srt = (arr) => {
   const numArray = [];
   for (let i = 0; i< arr2.length; i++) {
-  numArray = numArray.sort()
-
+  numArray = arr.sort()
   }
 }
 // const arr = [0, 0, 0, 0, 0, 0];
@@ -68,7 +66,7 @@ const meanOfElements = (a) => {
   return mean;
 }
 
-// const arr2 = [5, 6, 7, 2, 9, 1];
+const arr2 = [5, 6, 7, 2, 9, 1];
 
 // console.log(meanOfElements(arr));
 
@@ -97,3 +95,32 @@ const numberOfFibonacci = (a) => {
 // const fibArray = [1, 1, 2, 3, 5, 9, 14, 23];
 
 // console.log(numberOfFibonacci(fibArray));
+
+const findPrimeFactors = (num) => {
+  const primeFactors = [];
+  while (num % 2 === 0) {
+    primeFactors.push(2);
+    num = num / 2;
+  }
+  let sqrtNum = Math.sqrt(num);
+  for (let i = 3; i <= sqrtNum; i++) {
+    while (num % i === 0) {
+      primeFactors.push(i);
+      num = num / i;
+      }
+  }
+  if (num > 2) {
+    primeFactors.push(num);
+  }
+  return primeFactors;
+};
+
+console.log(findPrimeFactors(72));
+
+const numberDigits = (num) => {
+  let numString = num.toString()
+  const arr = numString.split("")
+  return arr;
+}
+
+console.log(numberDigits(398120));
