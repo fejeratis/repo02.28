@@ -119,3 +119,24 @@ const average = (a) => {
   return avg;
 }
 console.log(average(arr));
+
+
+const highestElement = (a) => {
+  let highest = a[0]
+  for (let i = 0; i < a.length; i++) {
+    if (a[i] < highest) {
+      highest = a[i];
+
+    }
+  }
+  return highest;
+}
+console.log(highestElement(arr2));
+
+const fibo = (n) => {
+  if (n === 0) return 0;
+  if (n === 1) return 1;
+  return fibo(n - 1) + fibo(n - 2);
+};
+
+console.log(fibo(4));
