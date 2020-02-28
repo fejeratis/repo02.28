@@ -6,9 +6,6 @@ const arr = (n) => {
 
 // console.log(arr(3));
 
-
-
-
 const fgv = (arr) => {
   let numb = 0;
   for (let i = 0; i < arr.length; i++) {
@@ -118,7 +115,7 @@ const findPrimeFactors = (num) => {
   return primeFactors;
 };
 
-// console.log(findPrimeFactors(72));
+console.log(findPrimeFactors(72));
 
 const numberDigits = (num) => {
   let numString = num.toString()
@@ -126,4 +123,4 @@ const numberDigits = (num) => {
   return arr;
 }
 
-console.log(numberDigits(123));
+console.log(numberDigits(398120));
