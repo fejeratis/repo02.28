@@ -15,3 +15,11 @@ const fgv = (arr) => {
   }
 
 }
+
+const srt =(arr) => {
+  const numArray = [];
+  for (let i = 0; i< arr2.length; i++) {
+  numArray = numArray.sort()
+
+  }
+}
