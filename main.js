@@ -58,3 +58,16 @@ const smallestElement = (a) => {
 
 // console.log(smallestElement(arr2));
 
+const numberOfFibonacci = (a) => {
+  let number = 0;
+  for (let i = 2; i < a.length; i++) {
+    if (a[i] === a[i - 1] + a[i - 2]) {
+      number++;
+    }
+  }
+  return number;
+};
+
+// const fibArray = [1, 1, 2, 3, 5, 9, 14, 23];
+
+// console.log(numberOfFibonacci(fibArray));
